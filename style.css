@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EFE5DC;
+    color: #333;
+    line-height: 1.6;
+}
+
+.containerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.conver {
+    width: 900px;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #e6d3b6, #d0da92);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #eb4a4a;
+    color: white;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.intro button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.intro button:hover {
+    transform: scale(1.1);
+}
+
+.section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background: linear-gradient(135deg, #6bff8b, #e4fafa);
+}
+
+#about {
+    background-color: #FFF;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text p {
+    font-size: 18px;
+    color: #333;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #2191FB;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #6BCB77;
+}
+
+.footer {
+    background-color: #FF715B;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-audio {
+    margin-left: 20px;
+}
+
+footer audio {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.faq-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.faq-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #00695c;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    position: relative;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.faq-question:hover {
+    background-color: #b2ebf2;
+    transform: translateY(-2px);
+}
+
+.faq-question h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #004d40;
+}
+
+.comments-section {
+    margin: 15px;
+    float: right;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.comments-section h2 {
+    color: #bac51e;
+    text-align: center;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.comment-text {
+    font-style: italic;
+    color: #555;
+}
+
+.add-comment {
+    margin-top: 20px;
+    text-align: center;
+}
+/* التأكد من أن كل شيء داخل الصفحة لا يتجاوز عرض الجهاز */
+.container {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* تنسيق النصوص ليكون متجاوبًا */
+h1, h2, p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* تنسيق الصور لتكون متجاوبة */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* الشريط السفلي */
+.footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #FF715B;
+    color: white;
+    text-align: center;
+    padding: 9px 0;
+}
+
+/* تحسين التوافق مع الهاتف */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* إخفاء التعليقات في الهاتف */
+    .comment {
+        display: none;
+    }
+    .comments-section{
+        display: none;
+    }
+    .intro p{
+        display: none;
+    }
+    .imis img{
+        display: none;
+    }
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: -8px;
+    }
+    /* منع التمرير الأفقي */
+    html, body {
+        overflow-x: hidden;
+    }
+    .footer{
+        padding: 1px 5px;
+    }
+
+}
+
+/* تنسيق خاص للأجهزة اللوحية */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .comments:nth-child(1) {
+        display: none;
+    }
+    body {
+        font-size: 18px;
+    }
+    .imis img{
+        display : none;
+    }
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+    .footer{
+        position: fixed;
+        padding: 1px 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* قائمة الهامبرغر في الهاتف */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* صورة متجاوبة */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+
+/* تنسيق خاص للهاتف */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* إخفاء التعليقات في الهاتف */
+    .comments {
+        display: none;
+    }
+}
+
+/* تنسيق خاص للوحة الإلكترونية */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    /* إخفاء تعليق واحد فقط في اللوحة */
+    .comment:nth-child(4) {
+        display: none;
+    }
+}

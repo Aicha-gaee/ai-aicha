@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>intelligence artificielle</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./Radio.png" />
+</head>
+
+<body>
+  <style>
+    .box {
+      margin: 20px;
+      box-shadow: -1px 0 10px #9dad9efd;
+      background: linear-gradient(135deg, #f8a28c, #83db80);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 800px;
+      height: 400px;
+    }
+
+    .box a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+
+    .conver p {
+      color: rgb(219, 5, 5);
+    }
+
+    .imis {
+      font-size: 10px;
+      margin-top: -2px;
+      float: left;
+    }
+
+    .imis img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .intro {
+      text-align: center;
+      background: linear-gradient(to left,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.2)),
+        url("./ai.png");
+      background-position: center;
+      background-size: 290vh;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro h2 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+      line-height: 1.8;
+    }
+  </style>
+  <div class="imis">
+    <img src="./download (2).png" alt="i'm not img" />
+  </div>
+  <div class="containerr">
+    <nav>
+      <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li><a href="./search.html">Search</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="#">moi</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="intro">
+        <h2>Bienvenue dans l'intelligence artificielle</h2>
+        <p>
+          L'intelligence artificielle (IA) est un domaine de l'informatique qui vise à créer des systèmes capables
+          d'imiter l'intelligence humaine. Elle repose sur des algorithmes avancés, comme l'apprentissage automatique
+          (Machine Learning) et les réseaux de neurones (Neural Networks), pour analyser des données et prendre des
+          décisions.
+        </p>
+        <button class="btn"><a href="">Getting started</a></button>
+      </section>
+    </main>
+  </div>
+  <br />
+  <section id="about" class="section">
+    <h2>About intelligence artificielle</h2>
+    <p>
+      Ce site fournit des informations complètes sur l'intelligence artificielle, ses applications et son impact sur
+      notre vie quotidienne.
+    </p>
+    <button class="definition-button">Learn More</button>
+  </section>
+
+  <div class="faq-container">
+    <h1>Questions fréquemment posées</h1>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h3>Quelle est la localisation de l’intelligence artificielle ?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Le site Web Intelligence Artificielle est une plateforme qui vise à fournir des informations sur
+          l'intelligence artificielle, ses applications et son impact sur divers domaines de la vie quotidienne.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h3>Quelles sont les fonctionnalités de ce site ?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>
+          Le site présente une conception réactive, un contenu constamment mis à jour, des articles utiles sur
+          l'intelligence artificielle et des effets 3D interactifs pour rendre l'expérience plus agréable et facile à
+          comprendre.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h3>Comment puis-je bénéficier du site ?</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Vous pouvez utiliser le site pour rester au courant des dernières évolutions en matière d'intelligence
+          artificielle, apprendre les concepts de base</p>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div class="comments-section">
+      <h2>L'opinion des gens</h2>
+      <div class="comment">
+        <p class="user-name">ahmed:</p>
+        <p class="comment-text">
+          Super site ! Le design est épuré et simple, j'ai adoré interagir avec le contenu.
+        </p>
+      </div>
+      <div class="comment">
+        <p class="user-name">sara:</p>
+        <p class="comment-text">
+          Excellente expérience en ligne et navigation facile. Merci !
+        </p>
+      </div>
+    </div>
+  </center>
+  <center>
+    <div class="comments-section">
+      <h2>L'opinion des gens</h2>
+      <div class="comment">
+        <p class="user-name">ahmed:</p>
+        <p class="comment-text">
+          Super site ! Le design est épuré et simple, j'ai adoré interagir avec le contenu.
+        </p>
+      </div>
+      <div class="comment">
+        <p class="user-name">sara:</p>
+        <p class="comment-text">
+          Excellente expérience en ligne et navigation facile. Merci !
+        </p>
+      </div>
+    </div>
+  </center>
+  <center>
+    <div class="comments-section">
+      <h2>L'opinion des gens</h2>
+      <div class="comment">
+        <p class="user-name">ahmed:</p>
+        <p class="comment-text">
+          Super site ! Le design est épuré et simple, j'ai adoré interagir avec le contenu.
+        </p>
+      </div>
+      <div class="comment">
+        <p class="user-name">sara:</p>
+        <p class="comment-text">
+          Excellente expérience en ligne et navigation facile. Merci !
+        </p>
+      </div>
+    </div>
+  </center>
+  <center>
+    <div class="comments-section">
+      <h2>L'opinion des gens</h2>
+      <div class="comment">
+        <p class="user-name">ahmed:</p>
+        <p class="comment-text">
+          Super site ! Le design est épuré et simple, j'ai adoré interagir avec le contenu.
+        </p>
+      </div>
+      <div class="comment">
+        <p class="user-name">sara:</p>
+        <p class="comment-text">
+          Excellente expérience en ligne et navigation facile. Merci !
+        </p>
+      </div>
+    </div>
+  </center>
+  <br> <br>    <br> <br>    <br> <br>    <br> <br>    <br> <br>    <br> <br>    <br> <br>    <br> <br>   <br> <br>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>&copy; 2025 intelligence artificielle</p>
+      </div>
+      <div class="footer-audio">
+        <audio id="radio" controls>
+          <source src="./station-radio-238854.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

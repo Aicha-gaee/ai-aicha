@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px; /* إضافة حشو لتجنب التصاق العناصر بالحواف */
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 100%; /* جعل العرض يتناسب مع الشاشة */
+    max-width: 500px; /* تحديد أقصى عرض */
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 32px; /* تصغير حجم العنوان */
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 100%; /* جعل العرض يتناسب مع الشاشة */
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    font-size: 16px; /* زيادة حجم الخط */
+}
+
+.contact-left textarea {
+    resize: none;
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 15px;
+    width: 100%; /* جعل العرض يتناسب مع الشاشة */
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px; /* زيادة الحشو */
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+    width: 30%; /* جعل العرض يتناسب مع الشاشة */
+    justify-content: center; /* توسيط النص والأيقونة */
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 100%; /* جعل الصورة تتكيف مع العرض */
+    max-width: 600px; /* تحديد أقصى عرض */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+/* Media Queries للتجاوب مع الأجهزة المختلفة */
+
+/* للأجهزة اللوحية */
+@media (max-width: 768px) {
+    .contact-left button {
+        padding: 12px 24px; /* تصغير حجم الزر */
+        width: 100%;
+        font-size: 14px; /* تصغير حجم الخط */
+    }
+    .contact-container {
+        flex-direction: column; /* جعل العناصر في عمود واحد */
+        justify-content: center;
+        gap: 40px; /* زيادة المسافة بين العناصر */
+    }
+
+    .contact-left {
+        align-items: center; /* توسيط العناصر */
+        text-align: center; /* توسيط النص */
+    }
+
+    .contact-left-title h2 {
+        font-size: 28px; /* تصغير حجم العنوان */
+    }
+
+    .contact-left-title hr {
+        margin: 0 auto 20px; /* توسيط الخط */
+    }
+
+    .contact-right img {
+        max-width: 400px; /* تصغير حجم الصورة */
+    }
+}
+
+/* للهواتف */
+@media (max-width: 480px) {
+    .contact-left-title h2 {
+        font-size: 24px; /* تصغير حجم العنوان */
+    }
+
+    .contact-inputs {
+        font-size: 14px; /* تصغير حجم الخط */
+    }
+
+    .contact-left button {
+        padding: 12px 24px; /* تصغير حجم الزر */
+        width: 100%;
+        font-size: 14px; /* تصغير حجم الخط */
+    }
+
+    .contact-right img {
+        max-width: 300px; /* تصغير حجم الصورة */
+    }
+}

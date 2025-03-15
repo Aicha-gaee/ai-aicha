@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>intelligence artificielle</title>
+  <link rel="stylesheet" href="search.css">
+</head>
+<body>
+  <div class="container">
+    <div class="date">
+      <p id="current-date">Date </p>
+    </div>
+    <h1>Search intelligence artificielle</h1>
+    <div class="boxes">
+      <div class="box music-box">
+        <p><a href="./ai/diff-ai.html">Définition de l'intelligence artificielle</a></p>
+      </div>
+      <div class="box radio-box">
+        <p><a href="./ai/Futur-ai.html">Futur de carrière intelligence artificielle</a></p>
+      </div>
+      <div class="box Podcast-box">
+        <p><a href="./ai/python.html">Python et l'intelligence artificielle</a></p>
+      </div>
+    </div>
+
+
+    <div class="about">
+      <h2>identification</h2>
+      <p>
+        <strong>python :</strong> C'est un langage de programmation avancé utilisé dans de nombreuses choses et facile à utiliser.
+        <br>
+        <strong>ai :</strong> L'intelligence artificielle aide les humains dans de nombreux domaines, par exemple le chat GPT
+      </p>
+    </div>
+
+    <div class="video-previews">
+      <h2>Preview videos</h2>
+      <div class="preview-grid">
+        <div class="preview-item">
+           <video controls width="300">
+            <source src="./video/ما هو الذكاء الإصطناعي ؟  فِهموجرافيك ١.mp4" type="video/mp4">
+           </video>
+          <p>Video about ai</p>
+        </div>
+        <div class="preview-item">
+            <video controls width="300">
+                <source src="./video/Python in 100 Seconds.mp4" type="video/mp4">
+               </video>
+          <p>Video about Python</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const dateElement = document.getElementById('current-date');
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent += today.toLocaleDateString('en-us', options);
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>intelligence artificielle</title>
+    <link rel="icon" href="./Radio.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .info {
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #fff;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            border-bottom: 3px solid #fff;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        button {
+            font-size: 20px;
+            color: #fff;
+            background-color: #3E013E;
+            padding: 15px 30px;
+            border: 2px solid #fff;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #3E0175;
+        }
+
+        .image img {
+            height: 380px;
+            width: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .image {
+                display: none;
+            }
+
+            .info {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 24px;
+                line-height: 1.8;
+                font-weight: normal;
+            }
+			.info h1 {
+				font-size: 30px;
+			}
+            button {
+                font-size: 24px;
+                padding: 18px 35px;
+            }
+        }
+		@keyframes info-move {
+			0% {
+				transform: translateX(-100px);
+			}
+	
+			100% {
+				transform: translateX(0px);
+			}
+		}
+	
+		.image img:nth-child(1) {
+			animation: left-img 3s;
+		}
+	
+		.image img:nth-child(2) {
+			animation: right-img 3s;
+		}
+	
+		@keyframes left-img {
+			0% {
+				transform: translateX(900px);
+	
+			}
+	
+			100% {
+				transform: translateX(0px);
+	
+			}
+		}
+	
+		@keyframes right-img {
+			0% {
+				transform: translateX(500px);
+			}
+	
+			100% {
+				transform: translateX(0px);
+	
+			}
+		}
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .image {
+                display: none;
+            }
+
+            h3 {
+                font-size: 39px;
+                line-height: 2.3;
+                font-weight: normal;
+            }
+
+            button {
+                font-size: 34px;
+                padding: 18px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="info">
+            <h1>About</h1>
+            <h3>L'intelligence artificielle (IA) est la capacité des machines à effectuer des tâches typiquement
+                associées à l'intelligence humaine, comme l'apprentissage, le raisonnement, la résolution de problème,
+                la perception ou la prise de décision. L'intelligence artificielle désigne également le champ de
+                recherche visant à développer de telles machines, ainsi que les systèmes informatiques qui en résultent.
+            </h3>
+            <button>Learn More</button>
+        </div>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="image">
+            <img src="https://www.transparentpng.com/thumb/book-png/gYJvka-book-cut-out-png.png">
+        </div>
+    </div>
+</body>
+
+</html>
